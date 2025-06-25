@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lucky Closet</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>🛍 Lucky's Fashion Closet ✨</header>
+
+<div class="controls">
+  <input type="text" id="searchInput" placeholder="Search your style...">
+  <select id="priceFilter">
+    <option value="all">All Prices</option>
+    <option value="low">Under $50</option>
+    <option value="mid">$50-$100</option>
+    <option value="high">Over $100</option>
+  </select>
+  <select id="tagFilter">
+    <option value="all">All Tags</option>
+    <option value="casual">Casual</option>
+    <option value="party">Party</option>
+    <option value="formal">Formal</option>
+  </select>
+  <button class="toggle-mode" onclick="toggleDarkMode()">🌓 Toggle Mode</button>
+</div>
+
+<div class="categories">
+  <div class="category">👗 Dresses</div>
+  <div class="category">👚 Tops</div>
+  <div class="category">👖 Bottoms</div>
+  <div class="category">🧥 Jackets</div>
+  <div class="category">🥿 Footwear</div>
+</div>
+
+<section class="shop" id="shop"></section>
+
+<div class="pagination">
+  <button onclick="prevPage()">⬅ Prev</button>
+  <span id="pageNum">1</span>
+  <button onclick="nextPage()">Next ➡</button>
+</div>
+
+<footer>© 2025 luckyCloset • Color Your Closet 💖</footer>
+
+<script src="script.js"></script>
+</body>  
+</html>
